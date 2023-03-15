@@ -1,4 +1,5 @@
 ﻿using ElevatorSimulator.Enum;
+using ElevatorSimulator.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,7 @@ namespace ElevatorSimulator.Classes
 {
     public class Floor : IFloor
     {
+        IPassenger _IPassenger;
         public int currfloor;
         public List<Passenger> Passengers;
 

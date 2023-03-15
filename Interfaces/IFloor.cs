@@ -1,6 +1,7 @@
-﻿using ElevatorSimulator.Enum;
+﻿using ElevatorSimulator.Classes;
+using ElevatorSimulator.Enum;
 
-namespace ElevatorSimulator.Classes
+namespace ElevatorSimulator.Interfaces
 {
     public interface IFloor
     {
