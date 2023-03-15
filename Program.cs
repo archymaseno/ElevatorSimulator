@@ -37,11 +37,11 @@ for (int i = 0; i < 5; i++)
     {
         throw new IndexOutOfRangeException("There are 0 to 9 floors in this buidling");
     }
-    int destinationfloor = df;
+    int DestinationFloor = df;
 
     Passenger pss = new Passenger();
-    pss.passengerFloor = userfloor;
-    pss.destinationFloor = destinationfloor;
+    pss.PassengerFloor = userfloor;
+    pss.DestinationFloor = DestinationFloor;
     Psslist.Add(pss);
 
     Thread.Sleep(2000);
@@ -58,12 +58,12 @@ while (operate)
     foreach (var userfl in Psslist)
     {
 
-        Passenger passenger = new Passenger() { destinationFloor = userfl.destinationFloor };
-        Directions direction = passenger.destinationFloor > userfl.passengerFloor ? Directions.Up : Directions.Down;
+        Passenger passenger = new Passenger() { DestinationFloor = userfl.DestinationFloor };
+        Directions direction = passenger.DestinationFloor > userfl.PassengerFloor ? Directions.Up : Directions.Down;
 
-        es.Floors[userfl.passengerFloor].AddPassenger(passenger);
+        es.Floors[userfl.PassengerFloor].AddPassenger(passenger);
 
-        es.CallElevator(userfl.passengerFloor, direction);
+        es.CallElevator(userfl.PassengerFloor, direction);
     }
 
 

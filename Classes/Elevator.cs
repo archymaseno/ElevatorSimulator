@@ -125,13 +125,13 @@ namespace ElevatorSimulator.Classes
             lock (_lockObj)
             {
                 Passengers.Add(passenger);
-                if (passenger.destinationFloor >= ElevatorFloor)
+                if (passenger.DestinationFloor >= ElevatorFloor)
                 {
-                    UpwardFloors[passenger.destinationFloor] = true;
+                    UpwardFloors[passenger.DestinationFloor] = true;
                 }
                 else
                 {
-                    DownwardFloors[passenger.destinationFloor] = true;
+                    DownwardFloors[passenger.DestinationFloor] = true;
                 }
 
             }
@@ -145,7 +145,7 @@ namespace ElevatorSimulator.Classes
             {
                 for (int i = Passengers.Count - 1; i >= 0; i--)
                 {
-                    if (Passengers[i].destinationFloor == ElevatorFloor)
+                    if (Passengers[i].DestinationFloor == ElevatorFloor)
                     {
                         unloadedPassengers.Add(Passengers[i]);
                         Passengers.RemoveAt(i);

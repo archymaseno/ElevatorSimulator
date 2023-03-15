@@ -40,9 +40,9 @@ namespace ElevatorSimulator.Classes
                 for (int i = Passengers.Count - 1; i >= 0; i--)
                 {
                     Passenger passenger = Passengers[i];
-                    Directions passengerDir = passenger.destinationFloor > currfloor ? Directions.Up : Directions.Down;
+                    Directions passengerDir = passenger.DestinationFloor > currfloor ? Directions.Up : Directions.Down;
 
-                    if (passengerDir == elevDir && passenger.destinationFloor != currfloor)
+                    if (passengerDir == elevDir && passenger.DestinationFloor != currfloor)
                     {
 
                         if (LoadCount + 1 > (int)LoadStates.Full)
@@ -54,7 +54,7 @@ namespace ElevatorSimulator.Classes
                             elev.LoadPassengers(passenger);
                             LoadCount++;
                             Passengers.RemoveAt(i);
-                            Console.WriteLine($"Elevator: {elev.ElevatorId} at floor: {currfloor} Loading {1} Passenger  Going to:{passenger.destinationFloor}");
+                            Console.WriteLine($"Elevator: {elev.ElevatorId} at floor: {currfloor} Loading {1} Passenger  Going to:{passenger.DestinationFloor}");
                         }
                     }
                 }
