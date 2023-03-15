@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElevatorSimulator", "ElevatorSimulator.csproj", "{4634648F-4A61-4FF5-80A7-FE5F97B9AE8E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElevatorSimulator.Tests", "ElevatorSimulator.Tests\ElevatorSimulator.Tests.csproj", "{105B5D56-A233-4EC2-9F04-3A7790983AE9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4634648F-4A61-4FF5-80A7-FE5F97B9AE8E} = {4634648F-4A61-4FF5-80A7-FE5F97B9AE8E}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4634648F-4A61-4FF5-80A7-FE5F97B9AE8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4634648F-4A61-4FF5-80A7-FE5F97B9AE8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4634648F-4A61-4FF5-80A7-FE5F97B9AE8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4634648F-4A61-4FF5-80A7-FE5F97B9AE8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{105B5D56-A233-4EC2-9F04-3A7790983AE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{105B5D56-A233-4EC2-9F04-3A7790983AE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{105B5D56-A233-4EC2-9F04-3A7790983AE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{105B5D56-A233-4EC2-9F04-3A7790983AE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D06442C-D21D-4BFB-BE1E-6F0764CE352E}
+	EndGlobalSection
+EndGlobal
