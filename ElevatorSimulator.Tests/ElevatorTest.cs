@@ -53,12 +53,12 @@ namespace ElevatorSimulator.Tests
 
             // Add some passengers
             Passenger pss = new Passenger();
-            pss.PassengerFloor = 1;
-            pss.DestinationFloor = 5;
+            pss.passengerFloor = 1;
+            pss.destinationFloor = 5;
             elevator.LoadPassengers(pss);
             pss = new Passenger();
-            pss.PassengerFloor = 2;
-            pss.DestinationFloor = 5;
+            pss.passengerFloor = 2;
+            pss.destinationFloor = 5;
             elevator.LoadPassengers(pss);
 
             // Request some floors
@@ -109,12 +109,12 @@ namespace ElevatorSimulator.Tests
         public void TestLoadPassengers()
         {
             Passenger pss = new Passenger();
-            pss.PassengerFloor = 1; pss.DestinationFloor = 9;
+            pss.passengerFloor = 1; pss.destinationFloor = 9;
             Elevator elevator = new Elevator(1, 10);
             elevator.LoadPassengers(pss);
             Assert.AreEqual(1, elevator.Passengers.Count);
-            Assert.AreEqual(1, elevator.Passengers[0].PassengerFloor);
-            Assert.AreEqual(9, elevator.Passengers[0].DestinationFloor);
+            Assert.AreEqual(1, elevator.Passengers[0].passengerFloor);
+            Assert.AreEqual(9, elevator.Passengers[0].destinationFloor);
             Assert.IsTrue(elevator.UpwardFloors[9]);
         }
 
